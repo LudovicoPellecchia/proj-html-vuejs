@@ -9,7 +9,7 @@ export const store = reactive({
             draws: 2,
             losses: 0,
             totalPoints: 42,
-            logo:"src/assets/img/club-1.png"
+            logo: "src/assets/img/club-1.png"
 
         },
         {
@@ -19,7 +19,7 @@ export const store = reactive({
             draws: 2,
             losses: 1,
             totalPoints: 35,
-            logo:"src/assets/img/club-2.png"
+            logo: "src/assets/img/club-2.png"
 
         },
         {
@@ -29,7 +29,7 @@ export const store = reactive({
             draws: 3,
             losses: 0,
             totalPoints: 32,
-            logo:"src/assets/img/club-3.png"
+            logo: "src/assets/img/club-3.png"
         },
         {
             id: 4,
@@ -38,7 +38,7 @@ export const store = reactive({
             draws: 2,
             losses: 1,
             totalPoints: 31,
-            logo:"src/assets/img/league-club-5.png"
+            logo: "src/assets/img/league-club-5.png"
 
         },
         {
@@ -48,7 +48,7 @@ export const store = reactive({
             draws: 1,
             losses: 2,
             totalPoints: 30,
-            logo:"src/assets/img/club-4.png"
+            logo: "src/assets/img/club-4.png"
         },
         {
             id: 6,
@@ -57,7 +57,7 @@ export const store = reactive({
             draws: 0,
             losses: 3,
             totalPoints: 28,
-            logo:"src/assets/img/club-6.png"
+            logo: "src/assets/img/club-6.png"
         },
         {
             id: 7,
@@ -66,7 +66,7 @@ export const store = reactive({
             draws: 5,
             losses: 0,
             totalPoints: 26,
-            logo:"src/assets/img/club-7.png"
+            logo: "src/assets/img/club-7.png"
         },
         {
             id: 8,
@@ -75,7 +75,7 @@ export const store = reactive({
             draws: 2,
             losses: 2,
             totalPoints: 24,
-            logo:"src/assets/img/club-8.png"
+            logo: "src/assets/img/club-8.png"
         },
         {
             id: 9,
@@ -84,7 +84,7 @@ export const store = reactive({
             draws: 0,
             losses: 4,
             totalPoints: 20,
-            logo:"src/assets/img/club-9.png"
+            logo: "src/assets/img/club-9.png"
         },
         {
             id: 10,
@@ -93,7 +93,7 @@ export const store = reactive({
             draws: 1,
             losses: 2,
             totalPoints: 24,
-            logo:"src/assets/img/club-11.png"
+            logo: "src/assets/img/club-11.png"
         },
         {
             id: 11,
@@ -102,7 +102,7 @@ export const store = reactive({
             draws: 2,
             losses: 2,
             totalPoints: 21,
-            logo:"src/assets/img/league-club-6.png"
+            logo: "src/assets/img/league-club-6.png"
         },
         {
             id: 12,
@@ -111,7 +111,42 @@ export const store = reactive({
             draws: 2,
             losses: 2,
             totalPoints: 20,
-            logo:"src/assets/img/league-club-8.png"
+            logo: "src/assets/img/league-club-8.png"
         },
+    ],
+
+    upcomingMatchs: [
+        {
+            teams:{
+                homeTeam: "Schalke Club",
+                awayTeam: "Inter Club"
+            },
+            date: "October 20, 2022 17:00 pm",
+            stadium: "Expert Stadium"
+        },
+        {
+            teams:{
+                homeTeam:"Atletico Club",
+                awayTeam:"Schalke Club",
+            },
+            date: "September 18, 2022 21:00 pm",
+            stadium: "Expert Stadium"
+        },
+        {
+            teams:{
+                homeTeam: "United Fs Club",
+                awayTeam:"Bayern Club"
+            },
+            date: "August 3, 2022 19:00 pm",
+            stadium: "Expert Stadium"
+        },
+        {
+            teams:{
+                homeTeam:"Arsenal Club",
+                awayTeam: "Atletico Club"
+            },
+            date: "July 8, 2022 12:00 pm",
+            stadium: "Expert Stadium"
+        }
     ]
 })
