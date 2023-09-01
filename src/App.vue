@@ -18,6 +18,7 @@ export default{
 
 <template>
 <TheHeader></TheHeader>
+
 </template>
 
 <style >

@@ -14,14 +14,14 @@ export default {
         <div class="container">
             <div class="nav-top">
                 <div class="nav-logos">
-                    <div class="sponsor-logos">
+                    <div class="sponsor-logos  w-100">
                         <img src="../assets/img/sponsor1.png" alt="">
                         <img src="../assets/img/sponsor2.png" alt="">
                     </div>
-                    <div class="main-logos">
+                    <div class="main-logos w-100 text-center">
                         <img src="../assets/img/logo-football.png" alt="">
                     </div>
-                    <div class="social-icons">
+                    <div class="social-icons w-100 text-end">
                         <i class="fa-brands fa-facebook-f icon-style"></i>
                         <i class="fa-brands fa-instagram icon-style"></i>
                         <i class="fa-brands fa-twitter icon-style"></i>
@@ -68,12 +68,12 @@ export default {
             text-align: center;
         }
         .nav-links a {
-            font-size: 1.2rem;
-            font-weight: 700;
+            font-size: 1.1rem;
+            font-weight: 800;
             display: inline-block;
             color: white;
             text-transform: uppercase;
-            margin-right: 1.4rem;
+            margin-right: 3rem;
             padding-bottom: 10px;
             border-bottom: 0px solid white;
         }

@@ -35,11 +35,15 @@ export default {
     font-weight: 800;
     color: white;
 }
+.jumbo-title h5 {
+    font-weight: 800;
+}
 
 .my-btn{
+    font-size: 1.2rem;
     font-weight: 500;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 15px 50px ;
 }
 </style>

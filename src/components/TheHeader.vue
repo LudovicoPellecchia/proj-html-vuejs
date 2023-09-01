@@ -27,7 +27,7 @@ header{
     background-image: url(../assets/img/slider1-1.jpg);
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 830px;
     width: 100%;
 }
 
