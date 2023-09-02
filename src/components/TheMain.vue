@@ -41,9 +41,9 @@ export default {
                 </div>
             </div>
         </div>
-
-        <MatchsList></MatchsList>
     </main>
+    <MatchsList></MatchsList>
+
 </template>
 
 <style lang="scss" scoped>
