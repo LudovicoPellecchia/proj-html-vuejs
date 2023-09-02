@@ -146,13 +146,13 @@ export const store = reactive({
         },
         {
             teams: {
-                homeTeam:{
-                    name:"United Fs Club",
-                    logo:"src/assets/img/club-2.png"
-                } ,
-                awayTeam:{
+                homeTeam: {
+                    name: "United Fs Club",
+                    logo: "src/assets/img/club-2.png"
+                },
+                awayTeam: {
                     name: "Bayern Club",
-                    logo:"src/assets/img/club-8.png"
+                    logo: "src/assets/img/club-8.png"
                 },
             },
             date: "August 3, 2022 19:00 pm",
@@ -161,13 +161,13 @@ export const store = reactive({
         },
         {
             teams: {
-                homeTeam:{
-                    name:"Arsenal Club",
-                    logo:"src/assets/img/club-7.png"
-                }, 
-                awayTeam:{
-                    name:"Atletico Club",
-                    logo:"src/assets/img/club-9.png"
+                homeTeam: {
+                    name: "Arsenal Club",
+                    logo: "src/assets/img/club-7.png"
+                },
+                awayTeam: {
+                    name: "Atletico Club",
+                    logo: "src/assets/img/club-9.png"
                 },
             },
             date: "July 8, 2022 12:00 pm",
@@ -176,17 +176,56 @@ export const store = reactive({
         },
         {
             teams: {
-                homeTeam:{
-                    name:"Instanbul Sports",
-                    logo:"src/assets/img/club-1.png"
-                } ,
-                awayTeam:{
-                    name:"United Fs Club",
-                    logo:"src/assets/img/club-2.png"
+                homeTeam: {
+                    name: "Instanbul Sports",
+                    logo: "src/assets/img/club-1.png"
+                },
+                awayTeam: {
+                    name: "United Fs Club",
+                    logo: "src/assets/img/club-2.png"
                 },
             },
             date: "Jun 12, 2022 09:00 pm",
             stadium: "Expert Stadium"
         }
+    ],
+
+    players: [
+        {
+            name: "Michael Lee",
+            shirtNumber: 11,
+            image: "src/assets/img/player1.jpg",
+            position: "Forwarder"
+        },
+        {
+            name: "Ethan Smith",
+            shirtNumber: 15,
+            image: "src/assets/img/player2.jpg",
+            position: "Midfielder"
+        },
+        {
+            name: "James Johnson",
+            shirtNumber: 21,
+            image: "src/assets/img/player3.jpg",
+            position: "Defender"
+        },
+        {
+            name: "Charlie Roy",
+            shirtNumber: 2,
+            image: "src/assets/img/player4.jpg",
+            position: "Goalkeeper"
+        },
+        {
+            name: "Adam Brown",
+            shirtNumber: 7,
+            image: "src/assets/img/player5.jpg",
+            position: "Forwarder"
+        },
+        {
+            name: "Michael Kayn",
+            shirtNumber: 9,
+            image: "src/assets/img/player6.jpg",
+            position: "Forwarder"
+        },
     ]
 })

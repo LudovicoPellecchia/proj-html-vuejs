@@ -17,7 +17,7 @@ export default {
 <template>
     <div class="upcoming-matchs-section">
         <div class="container">
-            <h2 class="text-center text-white fw-bold pt-5 pb-5">Upcoming Matchs</h2>
+            <h2 class="text-center text-white fw-bold pt-4 pb-4">Upcoming Matchs</h2>
             <div class="matchs-list" v-for="singleMatch in store.upcomingMatchs">
                 <MatchCard :team="singleMatch"></MatchCard>
             </div>
@@ -30,5 +30,6 @@ export default {
     background-image: url(../assets/img/saha.jpg);
     background-size: cover;
     background-position: center;
+    padding:20px 0;
 }
 </style>

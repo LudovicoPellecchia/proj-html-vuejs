@@ -1,9 +1,12 @@
 <script>
 import { store } from "../store";
 import MatchsList from "./MatchsList.vue";
+import PlayerList from "./PlayerList.vue"
+
 export default {
     components: {
-        MatchsList
+        MatchsList,
+        PlayerList
     },
     data() {
         return {
@@ -41,14 +44,16 @@ export default {
                 </div>
             </div>
         </div>
+        <MatchsList></MatchsList>
+        <PlayerList></PlayerList>
+
     </main>
-    <MatchsList></MatchsList>
 
 </template>
 
 <style lang="scss" scoped>
 .match-preview-section {
-    padding: 40px 0;
+    padding: 30px 0;
 }
 
 .match-preview-section h2 {

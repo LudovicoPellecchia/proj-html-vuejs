@@ -26,7 +26,7 @@ export default {
     width: 100%;
 
     .container-title{
-        padding: 100px 0;
+        padding: 60px 0;
         margin: auto;
         width: 50%;
     }
