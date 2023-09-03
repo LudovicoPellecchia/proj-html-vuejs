@@ -42,6 +42,7 @@ export default {
 }
 
 .sponsor-banner-list {
+    padding: 0 20px;
     padding-top: 52px;
     padding-bottom: 40px;
     background-color: black;
