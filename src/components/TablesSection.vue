@@ -28,20 +28,20 @@ export default {
                             <thead>
                                 <tr class="table-stats p-3">
                                     <th class="th-lenght">TEAM</th>
-                                    <th>W</th>
-                                    <th>D</th>
-                                    <th>L</th>
-                                    <th>PTS</th>
+                                    <th class="text-center">W</th>
+                                    <th class="text-center">D</th>
+                                    <th class="text-center">L</th>
+                                    <th class="text-center">PTS</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr v-for="(singleTeam, index) in sortLeagueStandings">
-                                    <td v-if="index <= 8">{{ index + 1 }}<img :src="singleTeam.logo" alt="">{{
+                                    <td v-if="index <= 8" class="ps-2">{{ index + 1 }}<img :src="singleTeam.logo" alt="">{{
                                         singleTeam.name }}</td>
-                                    <td v-if="index <= 8">{{ singleTeam.wins }}</td>
-                                    <td v-if="index <= 8">{{ singleTeam.draws }}</td>
-                                    <td v-if="index <= 8">{{ singleTeam.losses }}</td>
-                                    <td v-if="index <= 8" class="fw-bold">{{ singleTeam.totalPoints }}</td>
+                                    <td v-if="index <= 8" class="text-center">{{ singleTeam.wins }}</td>
+                                    <td v-if="index <= 8" class="text-center">{{ singleTeam.draws }}</td>
+                                    <td v-if="index <= 8" class="text-center">{{ singleTeam.losses }}</td>
+                                    <td v-if="index <= 8" class="fw-bold text-center">{{ singleTeam.totalPoints }}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -130,7 +130,6 @@ table {
         }
 
         td {
-            padding-left: 10px;
             font-size: 1.2rem;
         }
     }
