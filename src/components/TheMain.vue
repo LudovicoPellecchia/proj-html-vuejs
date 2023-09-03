@@ -1,12 +1,14 @@
 <script>
 import { store } from "../store";
 import MatchsList from "./MatchsList.vue";
-import PlayerList from "./PlayerList.vue"
+import PlayerList from "./PlayerList.vue";
+import TablesSection from "./TablesSection.vue";
 
 export default {
     components: {
         MatchsList,
-        PlayerList
+        PlayerList,
+        TablesSection
     },
     data() {
         return {
@@ -46,7 +48,7 @@ export default {
         </div>
         <MatchsList></MatchsList>
         <PlayerList></PlayerList>
-
+        <TablesSection></TablesSection>
     </main>
 
 </template>

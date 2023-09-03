@@ -60,7 +60,7 @@ export default {
     }
 
     .nav-bottom {
-        padding: 2rem 0 0.8rem 0;
+        padding: 2rem 0 0 0;
         width: 100%;
 
 
