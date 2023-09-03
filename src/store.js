@@ -187,7 +187,63 @@ export const store = reactive({
             },
             date: "Jun 12, 2022 09:00 pm",
             stadium: "Expert Stadium"
-        }
+        },
+        {
+            teams: {
+                homeTeam: {
+                    name: "United Fs Club",
+                    logo: "src/assets/img/club-2.png"
+                },
+                awayTeam: {
+                    name: "Schalke Club",
+                    logo: "src/assets/img/club-6.png"
+                },
+            },
+            date: "October 20, 2022 17:00 pm",
+            stadium: "Expert Stadium"
+        },
+        {
+            teams: {
+                homeTeam: {
+                    name: "Inter Club",
+                    logo: "src/assets/img/league-club-5.png"
+                },
+                awayTeam: {
+                    name: "Madrid Club",
+                    logo: "src/assets/img/club-4.png"
+                },
+            },
+            date: "September 18, 2022 21:00 pm",
+            stadium: "Expert Stadium"
+        },
+        {
+            teams: {
+                homeTeam: {
+                    name: "Schalke Club",
+                    logo: "src/assets/img/club-6.png"
+                },
+                awayTeam: {
+                    name: "Arsenal Club",
+                    logo: "src/assets/img/club-7.png"
+                },
+            },
+            date: "August 3, 2022 19:00 pm",
+            stadium: "Expert Stadium"
+        },
+        {
+            teams: {
+                homeTeam: {
+                    name: "Bayern Club",
+                    logo: "src/assets/img/club-8.png"
+                },
+                awayTeam: {
+                    name: "Atletico Club",
+                    logo: "src/assets/img/club-9.png"
+                },
+            },
+            date: "July 8, 2022 12:00 pm",
+            stadium: "Expert Stadium"
+        },
     ],
 
     players: [
