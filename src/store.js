@@ -195,7 +195,7 @@ export const store = reactive({
             name: "Michael Lee",
             shirtNumber: 11,
             image: "src/assets/img/player1.jpg",
-            position: "Forwarder"
+            position: "Forwarder",
         },
         {
             name: "Ethan Smith",
@@ -228,71 +228,5 @@ export const store = reactive({
             position: "Forwarder"
         },
     ],
-
-    teamStats: [
-        {
-            team: "Istanbul Sports",
-            win: 18,
-            draw: 2,
-            lose: 0,
-            pts: 42
-        },
-        {
-            team: "Schalke Club",
-            win: 11,
-            draw: 0,
-            lose: 3,
-            pts: 28
-        },
-        {
-            team: "United Fs Club",
-            win: 14,
-            draw: 2,
-            lose: 1,
-            pts: 35
-        },
-        {
-            team: "Schalke Club",
-            win: 13,
-            draw: 3,
-            lose: 0,
-            pts: 32
-        },
-        {
-            team: "Inter Club",
-            win: 13,
-            draw: 2,
-            lose: 1,
-            pts: 31
-        },
-        {
-            team: "Madrid Club",
-            win: 12,
-            draw: 1,
-            lose: 2,
-            pts: 30
-        },
-        {
-            team: "Bayern Club",
-            win: 10,
-            draw: 2,
-            lose: 2,
-            pts: 24
-        },
-        {
-            team: "Arsenal Club",
-            win: 10,
-            draw: 5,
-            lose: 0,
-            pts: 26
-        },
-        {
-            team: "Atletico Club",
-            win: 9,
-            draw: 0,
-            lose: 4,
-            pts: 20
-        }
-    ]
 
 })
