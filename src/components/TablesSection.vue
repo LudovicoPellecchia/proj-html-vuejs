@@ -142,7 +142,7 @@ table {
         justify-content: center;
 
         div{
-            flex-basis: 40%;
+            flex-basis: 35%;
         }
 
         span{
