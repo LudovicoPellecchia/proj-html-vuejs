@@ -19,7 +19,7 @@ export default {
                 <div class="row row-cols-6">
                     <div class="col" v-for="singleBanner in store.bannerList">
                         <div class="banner-card p-3">
-                            <img :src="singleBanner.src" alt="">
+                            <img :src="singleBanner.src" :key="singleBanner.id" alt="">
                         </div>
                     </div>
                 </div>
