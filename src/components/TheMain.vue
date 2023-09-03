@@ -3,12 +3,14 @@ import { store } from "../store";
 import MatchsList from "./MatchsList.vue";
 import PlayerList from "./PlayerList.vue";
 import TablesSection from "./TablesSection.vue";
+import AdSponsor from "./AdSponsor.vue";
 
 export default {
     components: {
         MatchsList,
         PlayerList,
-        TablesSection
+        TablesSection,
+        AdSponsor
     },
     data() {
         return {
@@ -49,6 +51,8 @@ export default {
         <MatchsList></MatchsList>
         <PlayerList></PlayerList>
         <TablesSection></TablesSection>
+        <AdSponsor></AdSponsor>
+
     </main>
 
 </template>

@@ -86,8 +86,8 @@ export default {
 
     .standing-table,
     .fixture-results-table {
-        border: 1px solid #F5F5F5;
         height: 100%;
+        border: 1px solid #F5F5F5;
     }
 }
 

@@ -285,4 +285,31 @@ export const store = reactive({
         },
     ],
 
+
+    bannerList:[
+        {   
+            id:1,
+            src:"src/assets/img/client2.png"
+        },
+        {
+            id:2,
+            src:"src/assets/img/client3.png"
+        },
+        {
+            id:3,
+            src:"src/assets/img/client4.png"
+        },
+        {
+            id:4,
+            src:"src/assets/img/client7.png"
+        },
+        {
+            id:5,
+            src:"src/assets/img/client9.png"
+        },
+        {
+            id:6,
+            src:"src/assets/img/client10.png"
+        },
+    ]
 })
