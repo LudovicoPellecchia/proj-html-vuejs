@@ -53,12 +53,20 @@ export default {
                     <div class="fixture-results-table">
                         <table>
                             <thead>
-                                <tr v-for="singleMatch in store.upcomingMatchs">
-                                    <td> <img :src="singleMatch.teams.homeTeam.logo" alt="">
+                                <tr v-for="(singleMatch, index) in store.upcomingMatchs">
+                                    <td :class="index % 2 !== 0 ? 'bg-td' : ''" class="fixtures-td-style"> 
+                                        <div>
+                                            <img :src="singleMatch.teams.homeTeam.logo"
+                                            alt="">
                                         {{ singleMatch.teams.homeTeam.name }}
+                                        </div>
+
                                         <span class="fw-bold ps-3 pe-3">VS</span>
-                                        {{ singleMatch.teams.awayTeam.name }}
+                                        <div class="text-end">
+                                            {{ singleMatch.teams.awayTeam.name }}
                                         <img :src="singleMatch.teams.awayTeam.logo" alt="">
+                                        </div>
+
                                     </td>
                                 </tr>
                             </thead>
@@ -76,8 +84,9 @@ export default {
 .tables-section {
     padding-top: 30px;
 
-    .standing-table, .fixture-results-table{
-        border: 1px solid  #F5F5F5;
+    .standing-table,
+    .fixture-results-table {
+        border: 1px solid #F5F5F5;
         height: 100%;
     }
 }
@@ -97,7 +106,7 @@ export default {
     }
 
     .th-lenght {
-        padding: 20px;
+        padding: 15px;
         width: 60%;
     }
 }
@@ -114,7 +123,11 @@ table {
     }
 
     tr {
-        vertical-align: baseline;
+        vertical-align: middle;
+
+        .bg-td {
+            background-color: #ecebeb;
+        }
 
         td {
             padding-left: 10px;
@@ -122,6 +135,23 @@ table {
         }
     }
 }
+
+.fixtures-td-style{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div{
+            flex-basis: 40%;
+        }
+
+        span{
+            flex-basis: 10%;
+            text-align: center;
+        }
+    }
+
 
 .view-more-btn {
     padding: 20px;
