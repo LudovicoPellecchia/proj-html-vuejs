@@ -4,13 +4,15 @@ import MatchsList from "./MatchsList.vue";
 import PlayerList from "./PlayerList.vue";
 import TablesSection from "./TablesSection.vue";
 import AdSponsor from "./AdSponsor.vue";
+import JournalSection from "./JournalSection.vue";
 
 export default {
     components: {
         MatchsList,
         PlayerList,
         TablesSection,
-        AdSponsor
+        AdSponsor,
+        JournalSection
     },
     data() {
         return {
@@ -52,6 +54,7 @@ export default {
         <PlayerList></PlayerList>
         <TablesSection></TablesSection>
         <AdSponsor></AdSponsor>
+        <JournalSection></JournalSection>
 
     </main>
 

@@ -286,30 +286,70 @@ export const store = reactive({
     ],
 
 
-    bannerList:[
-        {   
-            id:1,
-            src:"src/assets/img/client2.png"
+    bannerList: [
+        {
+            id: 1,
+            src: "src/assets/img/client2.png"
         },
         {
-            id:2,
-            src:"src/assets/img/client3.png"
+            id: 2,
+            src: "src/assets/img/client3.png"
         },
         {
-            id:3,
-            src:"src/assets/img/client4.png"
+            id: 3,
+            src: "src/assets/img/client4.png"
         },
         {
-            id:4,
-            src:"src/assets/img/client7.png"
+            id: 4,
+            src: "src/assets/img/client7.png"
         },
         {
-            id:5,
-            src:"src/assets/img/client9.png"
+            id: 5,
+            src: "src/assets/img/client9.png"
         },
         {
-            id:6,
-            src:"src/assets/img/client10.png"
+            id: 6,
+            src: "src/assets/img/client10.png"
+        },
+    ],
+
+
+    articlesList:[
+        {
+            img: "src/assets/img/news3-1-150x150.png",
+            date: "29.05.2022",
+            title: "Football Rules",
+            paragraph:
+                "GOLDEN GOAL: In a football match, the goal scored by one of the teams in...",
+        },
+        {
+            img:"src/assets/img/news2-1-150x150.png",
+            date: "29.05.2022",
+            title: "Football Features",
+            paragraph:
+                "Football; It is an aerobic-based anaerobic sport in which jumps, kicks, turns, running with changing...",
+        },
+        {
+            img:"src/assets/img/news4-1-150x150.png",
+            date: "29.05.2022",
+            title: "Football Terms",
+            paragraph:
+                "GOLDEN GOAL: In a football match, the goal scored by one of the teams in...",
+        },
+        {
+            img:"src/assets/img/news6-1-150x150.png",
+            date: "29.05.2022",
+            title: "How many football players are there in the world?",
+            paragraph:
+                "According to this report, there are more than 301 thousand football clubs, over 1.752 million...",
+        },
+        {
+            img:"src/assets/img/news6-1-150x150.png",
+            date: "29.05.2022",
+            title: "What is Football?",
+            paragraph:
+                "Football is a sport that is known as a ball game and is loved by...",
         },
     ]
+
 })
