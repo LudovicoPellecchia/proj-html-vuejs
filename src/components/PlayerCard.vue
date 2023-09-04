@@ -28,18 +28,30 @@ export default {
 <style lang="scss" scoped>
 .my-card-style{
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
+    overflow: hidden;
 
     img{
-        border-radius: 30px;
+        
+        transform: scale(1);
+        transition: transform 0.5s;
 
+    }
+}
+
+.my-card-style:hover{
+
+    img{
+        transform: scale(1.08);
+        transition: transform 0.5s ;
     }
 }
 
 .player-info{
     background-color: black;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     padding: 15px;
     position: absolute;
     bottom: 0;

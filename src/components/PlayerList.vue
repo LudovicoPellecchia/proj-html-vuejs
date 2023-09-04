@@ -45,6 +45,7 @@ export default {
 .player-info-section {
     padding-bottom: 20px;
     background-image: url(../assets/img/player.jpg);
+    background-size: cover;
 }
 
 h2 {
