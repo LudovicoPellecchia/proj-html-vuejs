@@ -3,7 +3,6 @@
 export default {
     data() {
         return {
-
         }
     }
 }
@@ -12,6 +11,7 @@ export default {
 <template>
     <nav class="navbar my-nav">
         <div class="container">
+            <!-- Divido la Navbar in due parti: nav-top e nav-bottom -->
             <div class="nav-top">
                 <div class="nav-logos">
                     <div class="sponsor-logos  w-100">
@@ -33,10 +33,10 @@ export default {
                     <a class="nav-link " aria-current="page" href="#">Home</a>
                     <a class="nav-link" href="#">Fixtures & Results</a>
                     <a class="nav-link" href="#">League Table</a>
-                    <a class="nav-link">Players</a>
-                    <a class="nav-link">Gallery</a>
-                    <a class="nav-link">Blog</a>
-                    <a class="nav-link">Contact</a>
+                    <a class="nav-link" href="#">Players</a>
+                    <a class="nav-link" href="#">Gallery</a>
+                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </div>
             </div>
         </div>

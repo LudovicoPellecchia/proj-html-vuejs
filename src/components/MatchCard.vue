@@ -3,7 +3,7 @@ import { store } from "../store"
 
 export default {
     props: {
-        team: Object
+        team: Object 
     },
 
 
@@ -16,6 +16,8 @@ export default {
 </script>
 
 <template>
+
+    <!-- Componente della singola card -->
     <div class="match-card pb-4">
         <div class="my-card-style text-center">
 

@@ -28,6 +28,7 @@ export default {
             } else {
                 this.currentIndex = 0;
             }
+            /* Aumenta l'indice se minore della lunghezza dell'array, altrimenti lo riporta al primo elemento */
         },
 
         prevSlide() {
@@ -36,6 +37,7 @@ export default {
             } else {
                 this.currentIndex = this.backgroundImg.length - 1;
             }
+            /* Decrementa l'indice se è maggiore di 0, altrimenti lo riporta all'ultimo elemento dell'array  */
         },
 
         autoSlide() {
@@ -47,17 +49,21 @@ export default {
 
     computed: {
         currentBg() {
-            return this.backgroundImg[this.currentIndex]
+            return this.backgroundImg[this.currentIndex] 
+            /* Ritorna l'immagine con indice che viene aggiornato con i click */
         }
     },
 
     mounted() {
         this.autoSlide()
+        /* All'avvio del componente parte un timer che attiva in loop la funzione nextSlide */
     }
 }
 </script>
 
 <template>
+
+    <!-- l'Header è composto da due componenti: Navbar e Jumbotron -->
     <header :style="{ 'background-image': 'url(' + currentBg + ')' }">
         <NavBar></NavBar>
         <Jumbotron></Jumbotron>
@@ -66,6 +72,7 @@ export default {
             <div @click="nextSlide"><i class="fa-solid fa-chevron-right right-btn"></i></div>
         </div>
     </header>
+    
 </template>
 
 <style lang="scss" scoped>

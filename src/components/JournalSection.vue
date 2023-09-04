@@ -35,9 +35,7 @@ export default {
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 </template>
@@ -56,6 +54,8 @@ export default {
     overflow: auto;
 
 }
+
+
 .section-logo {
     margin: auto;
     background-color: black;
