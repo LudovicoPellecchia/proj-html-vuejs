@@ -23,19 +23,36 @@ export default {
 
     methods: {
         nextSlide() {
-            this.currentIndex = (this.currentIndex + 1 ) % this.backgroundImg.length
-            return this.currentIndex
+            if (this.currentIndex < (this.backgroundImg.length - 1)) {
+                this.currentIndex++;
+            } else {
+                this.currentIndex = 0;
+            }
         },
 
         prevSlide() {
-            this.currentIndex = (this.currentIndex - 1 + this.backgroundImg.length) % this.backgroundImg.length
+            if (this.currentIndex > 0) {
+                this.currentIndex--;
+            } else {
+                this.currentIndex = this.backgroundImg.length - 1;
+            }
+        },
+
+        autoSlide() {
+            setInterval(() => {
+                this.nextSlide();
+            }, 5000);
+        },
+    },
+
+    computed: {
+        currentBg() {
+            return this.backgroundImg[this.currentIndex]
         }
     },
 
-    computed:{
-        currentBg(){
-            return this.backgroundImg[this.currentIndex]
-        }
+    mounted() {
+        this.autoSlide()
     }
 }
 </script>
@@ -45,20 +62,22 @@ export default {
         <NavBar></NavBar>
         <Jumbotron></Jumbotron>
         <div class="arrows">
-            <div  @click="prevSlide"><i class="fa-solid fa-chevron-left left-btn"></i></div>
+            <div @click="prevSlide"><i class="fa-solid fa-chevron-left left-btn"></i></div>
             <div @click="nextSlide"><i class="fa-solid fa-chevron-right right-btn"></i></div>
         </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
+
+
 header {
-    background-image: url(../assets/img/slider1-1.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
     padding-bottom: 70px;
     position: relative;
+    transition: background-image 1s ease-in-out;
 }
 
 .arrows {
