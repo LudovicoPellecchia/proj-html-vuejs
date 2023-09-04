@@ -344,7 +344,7 @@ export const store = reactive({
                 "According to this report, there are more than 301 thousand football clubs, over 1.752 million...",
         },
         {
-            img:"src/assets/img/news6-1-150x150.png",
+            img:"src/assets/img/news1-1-150x150.png",
             date: "29.05.2022",
             title: "What is Football?",
             paragraph:
