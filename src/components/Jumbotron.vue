@@ -3,6 +3,7 @@ export default {
     data() {
         return{
             
+            
         }
     }
 }
@@ -26,7 +27,7 @@ export default {
     width: 100%;
 
     .container-title{
-        padding: 40px 0 90px 0;
+        padding: 100px 0 90px 0;
         margin: auto;
         width: 50%;
     }

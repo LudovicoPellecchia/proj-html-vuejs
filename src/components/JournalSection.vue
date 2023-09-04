@@ -27,7 +27,7 @@ export default {
                 <div class="col" v-for="singleJournal in store.articlesList">
                     <div class="card p-4 my-card-style">
                         <img :src="singleJournal.img" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title">{{ singleJournal.title }}</h5>
                             <div class="card-info">{{ singleJournal.date }}</div>
                             <p class="card-text">{{ singleJournal.paragraph }}</p>
@@ -69,6 +69,8 @@ export default {
     box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
 
     .my-btn{
+        width: 100%;
+        margin-top: auto;
         font-size: 1.2rem;
         font-weight: 500;
         border-radius: 30px;
