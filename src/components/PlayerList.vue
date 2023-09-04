@@ -18,8 +18,8 @@ export default {
     <div class="player-info-section">
         <div class="container">
             <h2 class="text-center text-white fw-bold">Players</h2>
-            <div class="row row-cols-4">
-                <div class="col" v-for="singlePlayer in store.players">
+            <div class="row pb-3">
+                <div class="col-3" v-for="singlePlayer in store.players">
                     <PlayerCard :player="singlePlayer"></PlayerCard>
                 </div>
             </div>
@@ -31,6 +31,17 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+::-webkit-scrollbar{
+    background: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: #9c9c9c;
+}
+
+
+
 .player-info-section {
     padding-bottom: 20px;
     background-image: url(../assets/img/player.jpg);
@@ -38,6 +49,12 @@ export default {
 
 h2 {
     padding: 40px 0;
+}
+
+.row{
+    flex-wrap: nowrap;
+    overflow: auto;
+
 }
 
 .my-btn {

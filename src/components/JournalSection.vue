@@ -24,7 +24,7 @@ export default {
 
         <div class="jorunal-card-list">
             <div class="row row-cols-4">
-                <div class="col" v-for="singleJournal in store.articlesList">
+                <div class="col pb-4" v-for="singleJournal in store.articlesList">
                     <div class="card p-4 my-card-style">
                         <img :src="singleJournal.img" class="card-img-top" alt="...">
                         <div class="card-body text-center d-flex flex-column">
@@ -43,6 +43,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+::-webkit-scrollbar{
+    background: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: #9c9c9c;
+}
+.row{
+    flex-wrap: nowrap;
+    overflow: auto;
+
+}
 .section-logo {
     margin: auto;
     background-color: black;
